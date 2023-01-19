@@ -1,0 +1,41 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/api/student" method="post" id="add_studaent" autocomplete="off">
+  <input type="hidden" name="_id_" value="{{student._id_}}">
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="FirstName" placeholder="First Name">
+        <div class="text-danger">
+            
+        </div>
+    </div>
+     <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="LastName" placeholder="Last Name" >
+        <div class="text-danger">
+          
+        </div>
+    </div>
+     <div class="form-group">
+        <label>Age</label>
+        <input type="Number" class="form-control" name="Age" placeholder="Age">
+    </div>
+  
+     <div class="form-group col-md-6">
+        <label>class</label>
+        <input type="text" class="form-control" name="Class" placeholder="Class">
+    </div>
+    <div class="form-group col-md-6">
+        <label>year</label>
+        <input type="Number" class="form-control" name="year" placeholder="Year">
+    </div>
+    
+     <div class="form-group">
+        <label>Lesson</label>
+        <input type="text" class="form-control" name="Lesson" placeholder="Lesson">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info" onclick="return alert('Data Inserted Successfully?')" ><i class="fa fa-database"></i> submit</button>
+        <a class="btn btn-secondary" href="/student/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>
